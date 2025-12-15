@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 
@@ -60,7 +59,7 @@ export default function ContactPage() {
             <div>
               <p className="text-slate-900 font-medium">{notification.title}</p>
               {notification.description && (
-                <p className="text-slate-600 text-sm">{notification.description}</p>
+                <p className="text-slate-700 text-sm">{notification.description}</p>
               )}
             </div>
           </div>
@@ -85,7 +84,7 @@ export default function ContactPage() {
             {/* Informations de contact */}
             <div>
               <h2>Contactez votre développeur web en Haute-Saône</h2>
-              <p className="text-slate-600 mb-8">
+              <p className="text-slate-800 mb-8">
                 Basé en Haute-Saône, j'interviens à Vesoul, Lure, Gray, Luxeuil-les-Bains et Héricourt.
                 Devis gratuit, conseil personnalisé et réponse rapide garantie pour votre projet web.
               </p>
@@ -99,7 +98,7 @@ export default function ContactPage() {
                     <h3>Email professionnel</h3>
                     <a
                       href="mailto:contact@eurekadev.fr"
-                      className="text-slate-600 hover:text-blue-600 transition-colors"
+                      className="text-slate-800 hover:text-blue-600 transition-colors"
                     >
                         contact@eurekadev.fr
                     </a>
@@ -114,7 +113,7 @@ export default function ContactPage() {
                     <h3>Téléphone</h3>
                     <a
                       href="tel:+33612345678"
-                      className="text-slate-600 hover:text-blue-600 transition-colors"
+                      className="text-slate-800 hover:text-blue-600 transition-colors"
                     >
                       +33 6 12 34 56 78
                     </a>
@@ -127,8 +126,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3>Localisation</h3>
-                    <p className="text-slate-600">Haute-Saône (70)</p>
-                    <p className="text-slate-500 text-sm mt-1">
+                    <p className="text-slate-800">Haute-Saône (70)</p>
+                    <p className="text-slate-700 text-sm mt-1">
                       Interventions dans toute la Haute-Saône
                     </p>
                   </div>
@@ -137,10 +136,10 @@ export default function ContactPage() {
 
               <div className="bg-slate-50 p-6 rounded-xl">
                 <h3>Horaires de disponibilité</h3>
-                <div className="space-y-2 text-slate-600">
+                <div className="space-y-2 text-slate-800">
                   <p>Lundi - Vendredi : 9h00 - 18h00</p>
                   <p>Samedi : Sur rendez-vous</p>
-                  <p className="text-sm text-slate-500 mt-4">
+                  <p className="text-sm text-slate-700 mt-4">
                     Réponse garantie sous 24h ouvrées
                   </p>
                 </div>
@@ -156,7 +155,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-slate-700 mb-2"
+                      className="block text-slate-900 font-semibold mb-2"
                     >
                       Nom complet *
                     </label>
@@ -167,7 +166,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900 placeholder-slate-600"
                       placeholder="Votre nom"
                     />
                   </div>
@@ -175,7 +174,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-slate-700 mb-2"
+                      className="block text-slate-900 font-semibold mb-2"
                     >
                       Email *
                     </label>
@@ -186,7 +185,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900 placeholder-slate-600"
                       placeholder="votre@email.com"
                     />
                   </div>
@@ -194,7 +193,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-slate-700 mb-2"
+                      className="block text-slate-900 font-semibold mb-2"
                     >
                       Téléphone
                     </label>
@@ -204,7 +203,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900 placeholder-slate-600"
                       placeholder="+33 6 12 34 56 78"
                     />
                   </div>
@@ -212,7 +211,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block text-slate-700 mb-2"
+                      className="block text-slate-900 font-semibold mb-2"
                     >
                       Type de projet *
                     </label>
@@ -222,7 +221,7 @@ export default function ContactPage() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900"
                     >
                       <option value="">Sélectionnez une option</option>
                       <option value="creation">Création de site web</option>
@@ -235,7 +234,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-slate-700 mb-2"
+                      className="block text-slate-900 font-semibold mb-2"
                     >
                       Message *
                     </label>
@@ -246,7 +245,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-slate-900 placeholder-slate-600"
                       placeholder="Décrivez votre projet..."
                     />
                   </div>
@@ -269,7 +268,7 @@ export default function ContactPage() {
                     )}
                   </button>
 
-                  <p className="text-slate-500 text-sm text-center">
+                  <p className="text-slate-700 text-sm text-center font-medium">
                     * Champs obligatoires
                   </p>
                 </form>
@@ -309,7 +308,7 @@ export default function ContactPage() {
               >
                 <CheckCircle className="text-green-500 mx-auto mb-4" size={40} />
                 <h3>{item.title}</h3>
-                <p className="text-slate-600">{item.description}</p>
+                <p className="text-slate-700">{item.description}</p>
               </div>
             ))}
           </div>

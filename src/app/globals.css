@@ -75,3 +75,120 @@ h5 {
   color: white;
 }
 
+/* Amélioration du contraste - IMPORTANT : Ces règles forcent un meilleur contraste */
+
+/* Textes principaux plus sombres pour un meilleur contraste */
+.text-slate-600 {
+  color: #374151 !important; /* Plus foncé que le slate-600 par défaut */
+}
+
+.text-slate-700 {
+  color: #1f2937 !important; /* Plus foncé pour un excellent contraste */
+}
+
+.text-slate-800 {
+  color: #111827 !important; /* Très bon contraste */
+}
+
+.text-slate-900 {
+  color: #0f172a !important; /* Contraste maximal */
+}
+
+/* Labels de formulaire avec contraste renforcé */
+label.text-slate-800 {
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+/* Textes dans les formulaires */
+form label {
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+/* Paragraphes et textes descriptifs */
+p.text-slate-600,
+p.text-slate-700,
+div.text-slate-600,
+div.text-slate-700 {
+  color: #374151 !important;
+}
+
+/* Liens avec meilleur contraste */
+a.text-slate-600,
+a.text-slate-700 {
+  color: #1f2937 !important;
+}
+
+a.text-slate-600:hover,
+a.text-slate-700:hover {
+  color: #1d4ed8 !important; /* Bleu plus accessible */
+}
+
+/* Textes secondaires avec contraste minimum requis */
+.text-slate-500 {
+  color: #6b7280 !important; /* Plus foncé que le slate-500 par défaut */
+}
+
+/* Amélioration du contraste des formulaires */
+input, select, textarea {
+  color: #111827 !important; /* Texte très foncé pour un excellent contraste */
+}
+
+/* Placeholders avec meilleur contraste */
+input::placeholder, textarea::placeholder {
+  color: #4b5563 !important; /* Plus foncé que le gris par défaut */
+  opacity: 1 !important;
+}
+
+/* Options de select avec bon contraste */
+select option {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+}
+
+/* Style spécifique pour les selects */
+select {
+  color: #111827 !important;
+}
+
+/* Amélioration du contraste pour les éléments de formulaire avec focus */
+input:focus, select:focus, textarea:focus {
+  color: #111827 !important;
+}
+
+/* Amélioration du contraste des options du select ouvert */
+select option:checked {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+/* Styles spécifiques pour les classes placeholder Tailwind */
+.placeholder-slate-600::placeholder {
+  color: #4b5563 !important; /* Plus foncé pour un meilleur contraste */
+  opacity: 1 !important;
+}
+
+/* Force la couleur du texte dans les champs de formulaire */
+.text-slate-900 {
+  color: #0f172a !important;
+}
+
+/* Amélioration spécifique pour les éléments de formulaire */
+input.text-slate-900,
+select.text-slate-900,
+textarea.text-slate-900 {
+  color: #0f172a !important;
+}
+
+/* Style pour les options non sélectionnées du select */
+select.text-slate-900 option {
+  color: #0f172a !important;
+  background: white !important;
+}
+
+/* Style pour l'option sélectionnée par défaut */
+select.text-slate-900 option[value=""] {
+  color: #6b7280 !important;
+}
+

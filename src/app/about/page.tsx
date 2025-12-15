@@ -3,15 +3,15 @@ import React from "react";
 import { Code, Heart, Lightbulb, Target, Award, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "À Propos - EurekaDev | Développeur Web Freelance Haute-Saône",
-  description: "Découvrez EurekaDev, développeur web freelance en Haute-Saône. 5+ années d'expérience, spécialisé création sites internet à Vesoul, Lure, Gray. Passion, innovation, résultats.",
-  keywords: "à propos eurekadev, développeur web freelance haute-saône, expérience web vesoul, portfolio développeur lure, expertise web gray",
+  title: "À Propos - EurekaDev | Nouveau Développeur Web Freelance Haute-Saône",
+  description: "Découvrez EurekaDev, développeur web freelance qui démarre son activité en Haute-Saône. Création sites internet modernes à Vesoul, Lure, Gray. Passion, innovation, accompagnement.",
+  keywords: "à propos eurekadev, nouveau développeur web freelance haute-saône, création entreprise web vesoul, développeur débutant lure, startup web gray",
   alternates: {
     canonical: "https://eurekadev.fr/about"
   },
   openGraph: {
-    title: "À Propos EurekaDev | Développeur Web Expert Haute-Saône",
-    description: "Développeur web freelance passionné basé en Haute-Saône. Plus de 5 ans d'expérience dans la création de sites internet sur mesure.",
+    title: "À Propos EurekaDev | Nouveau Développeur Web Haute-Saône",
+    description: "Développeur web freelance passionné qui démarre son aventure entrepreneuriale en Haute-Saône. Création de sites internet sur mesure avec un accompagnement personnalisé.",
     url: "https://eurekadev.fr/about"
   }
 };
@@ -20,26 +20,26 @@ export default function AboutPage() {
   const values = [
     {
       icon: <Heart size={32} />,
-      title: "Passion",
-      description: "Passionné par le web, je mets tout mon cœur dans chaque projet",
+      title: "Motivation",
+      description: "Nouvelle entreprise, nouvelle énergie ! Je m'investis à 100% dans votre projet",
     },
     {
       icon: <Lightbulb size={32} />,
-      title: "Innovation",
-      description: "Toujours à la pointe des dernières technologies et tendances",
+      title: "Technologies modernes",
+      description: "Je maîtrise les outils web les plus récents pour des sites performants",
     },
     {
       icon: <Target size={32} />,
-      title: "Résultats",
-      description: "Focus sur vos objectifs et la performance de votre site",
+      title: "Accompagnement",
+      description: "Étant nouveau, je prends le temps d'écouter et de conseiller chaque client",
     },
   ];
 
-  const stats = [
-    { number: "50+", label: "Projets réalisés" },
-    { number: "98%", label: "Clients satisfaits" },
-    { number: "5+", label: "Années d'expérience" },
-    { number: "24/7", label: "Support disponible" },
+  const commitments = [
+    { number: "2024", label: "Création d'EurekaDev" },
+    { number: "100%", label: "Motivation" },
+    { number: "Gratuit", label: "Devis détaillé" },
+    { number: "< 24h", label: "Réponse garantie" },
   ];
 
   return (
@@ -49,20 +49,20 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1>À propos d'EurekaDev - Développeur Web en Haute-Saône</h1>
+              <h1>À propos d'EurekaDev - Nouvelle Aventure Web en Haute-Saône</h1>
               <p className="text-slate-600 mb-6">
-                Développeur web freelance passionné basé en Haute-Saône, je crée des sites internet sur mesure
-                qui allient esthétique moderne et performance technique pour les entreprises locales.
+                Bonjour ! Je suis le fondateur d'EurekaDev, une toute nouvelle entreprise de développement web
+                lancée en 2026 en Haute-Saône. Passionné de technologies web, je me lance dans l'aventure
+                entrepreneuriale pour accompagner les entreprises locales dans leur transformation digitale.
               </p>
               <p className="text-slate-600 mb-6">
-                Depuis plus de 5 ans, j'aide les entrepreneurs, TPE et PME de Vesoul, Lure, Gray,
-                Luxeuil-les-Bains et de toute la Haute-Saône à développer leur présence en ligne
-                avec des solutions web adaptées aux spécificités du marché local.
+                Bien que mon entreprise soit récente, je maîtrise les technologies web modernes et j'ai
+                la motivation d'un entrepreneur qui démarre. Je mets cette énergie au service des TPE,
+                PME et entrepreneurs de Vesoul, Lure, Gray et de toute la Haute-Saône.
               </p>
               <p className="text-slate-600">
-                Mon objectif : vous offrir un site web qui non seulement vous
-                ressemble, mais qui devient un véritable outil de développement
-                pour votre activité.
+                Mon avantage : une approche fraîche, un accompagnement personnalisé et l'envie de
+                prouver que même une jeune entreprise peut créer des sites web exceptionnels !
               </p>
             </div>
             <div>
@@ -76,14 +76,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Statistiques */}
+      {/* Mes engagements */}
       <section className="py-16 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {commitments.map((commitment, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl text-white mb-2">{stat.number}</div>
-                <p className="text-blue-100">{stat.label}</p>
+                <div className="text-5xl text-white mb-2">{commitment.number}</div>
+                <p className="text-blue-100">{commitment.label}</p>
               </div>
             ))}
           </div>
@@ -166,20 +166,73 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Pourquoi choisir une nouvelle entreprise */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2>Pourquoi choisir une nouvelle entreprise web ?</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Les avantages de travailler avec EurekaDev, votre partenaire web qui démarre
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "100% Disponible",
+                description: "En tant que nouvelle entreprise, je peux me consacrer entièrement à votre projet",
+                icon: "⏰"
+              },
+              {
+                title: "Tarifs avantageux",
+                description: "Profitez de tarifs de lancement attractifs pour des prestations de qualité",
+                icon: "💰"
+              },
+              {
+                title: "Technologies récentes",
+                description: "Pas de legacy, j'utilise uniquement les outils web les plus modernes",
+                icon: "🚀"
+              },
+              {
+                title: "Motivation maximale",
+                description: "Chaque projet compte énormément pour construire ma réputation",
+                icon: "🔥"
+              },
+              {
+                title: "Relation directe",
+                description: "Vous travaillez directement avec le créateur, pas d'intermédiaires",
+                icon: "🤝"
+              },
+              {
+                title: "Flexibilité totale",
+                description: "Adaptation rapide à vos besoins et demandes spécifiques",
+                icon: "🎯"
+              }
+            ].map((advantage, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4 text-center">{advantage.icon}</div>
+                <h4 className="text-center mb-3">{advantage.title}</h4>
+                <p className="text-slate-600 text-sm text-center">{advantage.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Approche personnalisée */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Users className="text-blue-600 mx-auto mb-6" size={48} />
           <h2 className="text-slate-900 mb-6">Une approche personnalisée</h2>
           <p className="text-slate-600 mb-6">
-            Chaque projet est unique. C&apos;est pourquoi je prends le temps de
-            comprendre votre activité, vos objectifs et votre cible pour créer
-            un site web parfaitement adapté à vos besoins.
+            Chaque projet est unique et c'est d'autant plus vrai quand on démarre !
+            Je prends le temps de bien comprendre votre activité, vos objectifs et votre cible
+            pour créer un site web parfaitement adapté à vos besoins.
           </p>
           <p className="text-slate-600">
-            Transparence, communication régulière et réactivité sont au cœur de
-            ma méthode de travail. Vous êtes impliqué à chaque étape du projet
-            pour garantir un résultat qui vous correspond vraiment.
+            En tant que nouvelle entreprise, je mise tout sur la qualité de la relation client :
+            transparence totale, communication régulière et réactivité maximale.
+            Vous êtes mon partenaire dans cette aventure !
           </p>
         </div>
       </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,89 +10,84 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Coordonnées */}
           <div>
-            <h5 className="text-white mb-4">Contact</h5>
+            <h5 className="text-white mb-4">EurekaDev - Contact</h5>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-blue-400" />
-                <span className="text-slate-300">contact@webcreator.fr</span>
+                <a href="mailto:contact@eurekadev.fr" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  contact@eurekadev.fr
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-blue-400" />
-                <span className="text-slate-300">+33 6 12 34 56 78</span>
+                <a href="tel:+33612345678" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  +33 6 12 34 56 78
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-blue-400" />
-                <span className="text-slate-300">Paris, France</span>
+                <span className="text-slate-300">Haute-Saône (70)</span>
+              </div>
+              <div className="text-sm text-slate-400 mt-4">
+                <p>Lun-Ven : 9h-18h</p>
+                <p>Sam : Sur rendez-vous</p>
               </div>
             </div>
           </div>
 
           {/* Liens rapides */}
           <div>
-            <h5 className="text-white mb-4">Liens rapides</h5>
+            <h5 className="text-white mb-4">Navigation</h5>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors">
+                <a href="/" className="text-slate-300 hover:text-blue-400 transition-colors">
                   Accueil
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  Services
+                <a href="/services" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  Services Web
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors">
+                <a href="/portfolio" className="text-slate-300 hover:text-blue-400 transition-colors">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  Mentions légales
+                <a href="/about" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Réseaux sociaux */}
+          {/* Zone d'intervention */}
           <div>
-            <h5 className="text-white mb-4">Suivez-nous</h5>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
+            <h5 className="text-white mb-4">Zone d'intervention</h5>
+            <div className="text-slate-300 space-y-2">
+              <p className="text-sm">Développeur web freelance en Haute-Saône</p>
+              <ul className="text-sm space-y-1">
+                <li>• Vesoul & agglomération</li>
+                <li>• Lure & Luxeuil-les-Bains</li>
+                <li>• Gray & secteur sud</li>
+                <li>• Héricourt</li>
+              </ul>
+              <p className="text-xs text-slate-400 mt-3">
+                Interventions dans tout le département (70)
+              </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center">
           <p className="text-slate-400">
-            &copy; {new Date().getFullYear()} WebCreator. Tous droits réservés.
+            &copy; {new Date().getFullYear()} EurekaDev - Développeur Web Freelance Haute-Saône. Tous droits réservés.
           </p>
         </div>
       </div>

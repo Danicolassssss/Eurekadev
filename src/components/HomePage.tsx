@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { ArrowRight, Code, Smartphone, Zap, CheckCircle, Star } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Zap, CheckCircle, Star, MapPin, Building, Users } from "lucide-react";
 
 export function HomePage() {
   const router = useRouter();
@@ -50,24 +50,24 @@ export function HomePage() {
     },
   ];
 
-  const testimonials = [
+  const hauteSaoneAreas = [
     {
-      name: "Sophie Martin",
-      company: "Boutique en ligne",
-      text: "Un travail exceptionnel ! Mon site e-commerce a dépassé toutes mes attentes. Professionnel et à l'écoute.",
-      rating: 5,
+      city: "Vesoul & Agglomération",
+      description: "Préfecture de la Haute-Saône, centre économique du département",
+      speciality: "E-commerce & Sites vitrine",
+      icon: Building,
     },
     {
-      name: "Thomas Dubois",
-      company: "Cabinet d'architecture",
-      text: "Site vitrine magnifique qui reflète parfaitement notre identité. Les clients nous complimentent régulièrement.",
-      rating: 5,
+      city: "Lure & Luxeuil-les-Bains",
+      description: "Zones industrielles et thermales, riche patrimoine historique",
+      speciality: "Sites institutionnels",
+      icon: MapPin,
     },
     {
-      name: "Marie Lambert",
-      company: "Coach sportif",
-      text: "Réactif, créatif et très professionnel. Mon site attire maintenant beaucoup plus de clients !",
-      rating: 5,
+      city: "Gray & Secteur Sud",
+      description: "Porte d'entrée de la Franche-Comté, dynamisme entrepreneurial",
+      speciality: "Applications web",
+      icon: Users,
     },
   ];
 
@@ -156,26 +156,26 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Témoignages */}
+      {/* Zone d'intervention Haute-Saône */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Ce que disent mes clients en Haute-Saône</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">Leur satisfaction est ma meilleure récompense</p>
+            <h2>Expert Web en Haute-Saône</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">Au service des entreprises locales dans tout le département</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {hauteSaoneAreas.map((area, index) => (
               <div key={index} className="bg-slate-50 p-8 rounded-xl">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
-                  ))}
+                <div className="flex justify-center mb-4">
+                  <area.icon className="text-blue-600" />
                 </div>
-                <p className="text-slate-700 mb-6">&quot;{testimonial.text}&quot;</p>
-                <div>
-                  <p className="text-slate-900">{testimonial.name}</p>
-                  <p className="text-slate-500 text-sm">{testimonial.company}</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-3 text-center">{area.city}</h3>
+                <p className="text-slate-700 mb-4 text-center">{area.description}</p>
+                <div className="text-center">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    {area.speciality}
+                  </span>
                 </div>
               </div>
             ))}

@@ -36,7 +36,7 @@ export default function AboutPage() {
   ];
 
   const commitments = [
-    { number: "2024", label: "Création d'EurekaDev" },
+    { number: "2026", label: "Création d'EurekaDev" },
     { number: "100%", label: "Motivation" },
     { number: "Gratuit", label: "Devis détaillé" },
     { number: "< 24h", label: "Réponse garantie" },
@@ -94,7 +94,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Mes valeurs en tant que développeur web en Haute-Saône</h2>
+            <h2>Mes valeurs</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
               Les principes qui guident mon travail au quotidien
             </p>
@@ -121,9 +121,9 @@ export default function AboutPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Expertise technique pour vos projets web en Haute-Saône</h2>
+            <h2>Expertise technique</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Maîtrise des technologies web modernes pour des sites performants et adaptés aux entreprises locales
+              Maîtrise des technologies web modernes pour des sites performants
             </p>
           </div>
 
@@ -166,37 +166,37 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Pourquoi choisir une nouvelle entreprise */}
+      {/* Pourquoi choisir EurekaDev */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Pourquoi choisir une nouvelle entreprise web ?</h2>
+            <h2>Pourquoi choisir EurekaDev ?</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Les avantages de travailler avec EurekaDev, votre partenaire web qui démarre
+              Les atouts d'un partenaire web local et impliqué
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "100% Disponible",
-                description: "En tant que nouvelle entreprise, je peux me consacrer entièrement à votre projet",
+                title: "Disponibilité",
+                description: "Je suis réactif et disponible pour échanger sur votre projet",
                 icon: "⏰"
               },
               {
-                title: "Tarifs avantageux",
-                description: "Profitez de tarifs de lancement attractifs pour des prestations de qualité",
+                title: "Tarifs adaptés",
+                description: "Des prestations de qualité à des prix justes et transparents",
                 icon: "💰"
               },
               {
-                title: "Technologies récentes",
-                description: "Pas de legacy, j'utilise uniquement les outils web les plus modernes",
+                title: "Technologies actuelles",
+                description: "Des sites conçus avec des outils modernes et performants",
                 icon: "🚀"
               },
               {
-                title: "Motivation maximale",
-                description: "Chaque projet compte énormément pour construire ma réputation",
-                icon: "🔥"
+                title: "Engagement",
+                description: "Votre satisfaction est ma priorité pour construire une relation durable",
+                icon: "🤝"
               },
               {
                 title: "Relation directe",

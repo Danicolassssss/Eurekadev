@@ -75,18 +75,18 @@ export default function OffreLancementPage() {
   const advantages = [
     {
       icon: <Sparkles className="text-yellow-500" size={24} />,
-      title: "Offre limitée",
-      description: "Tarifs de lancement uniquement pour les 10 premiers clients"
+      title: "Offre de démarrage",
+      description: "Tarifs spéciaux pour le lancement de l'activité"
     },
     {
       icon: <Clock className="text-blue-500" size={24} />,
-      title: "Livraison rapide",
-      description: "Site livré en 2-3 semaines maximum"
+      title: "Délais respectés",
+      description: "Réalisation dans des délais raisonnables"
     },
     {
       icon: <Star className="text-purple-500" size={24} />,
-      title: "Qualité garantie",
-      description: "Même qualité que nos tarifs habituels"
+      title: "Travail soigné",
+      description: "Même exigence de qualité que pour tout projet"
     }
   ];
 

@@ -160,8 +160,8 @@ export function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Expert Web en Haute-Saône</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">Au service des entreprises locales dans tout le département</p>
+            <h2>Zone d'intervention</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">Au service des entreprises locales</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -186,16 +186,15 @@ export function HomePage() {
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2>Prêt à lancer votre projet web en Haute-Saône ?</h2>
+          <h2>Prêt à démarrer votre projet ?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Que vous soyez à Vesoul, Lure, Gray ou ailleurs en Haute-Saône,
-            discutons ensemble de vos besoins et créons le site web qui fera décoller votre activité locale.
+            Discutons ensemble de vos besoins pour créer un site qui vous ressemble.
           </p>
           <button
             onClick={() => navigateTo("contact")}
             className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors inline-flex items-center gap-2"
           >
-            Devis gratuit Haute-Saône
+            Me contacter
             <ArrowRight size={20} />
           </button>
         </div>

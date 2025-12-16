@@ -34,36 +34,36 @@ export default function ServicesPage() {
       icon: <Globe size={40} />,
       title: "Création de sites web",
       description:
-        "Conception et développement de sites web sur mesure, adaptés à votre image et vos objectifs.",
+        "Conception de sites internet adaptés à votre activité.",
       features: [
-        "Sites vitrines professionnels",
-        "Sites e-commerce performants",
-        "Applications web personnalisées",
-        "Design moderne et responsive",
+        "Sites vitrines",
+        "Sites e-commerce",
+        "Applications web",
+        "Design responsive",
       ],
     },
     {
       icon: <RefreshCw size={40} />,
-      title: "Refonte de sites existants",
+      title: "Refonte de sites",
       description:
-        "Modernisation de votre site actuel pour améliorer son design, ses performances et son efficacité.",
+        "Mise à jour de votre site actuel pour le moderniser.",
       features: [
-        "Analyse de l'existant",
-        "Optimisation UX/UI",
-        "Migration de contenu",
-        "Amélioration des performances",
+        "Audit de l'existant",
+        "Amélioration du design",
+        "Optimisation technique",
+        "Mise aux normes actuelles",
       ],
     },
     {
       icon: <Wrench size={40} />,
-      title: "Maintenance et support",
+      title: "Maintenance",
       description:
-        "Accompagnement continu pour garantir la sécurité, la performance et l'évolution de votre site.",
+        "Suivi technique pour assurer le bon fonctionnement de votre site.",
       features: [
-        "Mises à jour régulières",
-        "Corrections et améliorations",
-        "Support technique réactif",
-        "Sauvegardes automatiques",
+        "Mises à jour",
+        "Corrections",
+        "Support technique",
+        "Sauvegardes",
       ],
     },
   ];
@@ -172,9 +172,9 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2>Comment ça marche pour votre projet web en Haute-Saône ?</h2>
+            <h2>Comment ça marche ?</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Un processus simple et transparent du premier contact à la mise en ligne, avec un accompagnement local personnalisé
+              Un processus simple et transparent du premier contact à la mise en ligne
             </p>
           </div>
 

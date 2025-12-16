@@ -180,10 +180,9 @@ export default function PortfolioPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2>Votre projet web en Haute-Saône sera le prochain ?</h2>
+          <h2>Vous avez un projet en tête ?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Créons ensemble un site web professionnel qui développe votre activité
-            à Vesoul, Lure, Gray et dans toute la Haute-Saône
+            N'hésitez pas à me contacter pour en discuter.
           </p>
           <ServicesNavigation />
         </div>

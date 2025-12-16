@@ -20,8 +20,8 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-blue-400" />
-                <a href="tel:+33612345678" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  +33 6 12 34 56 78
+                <a href="tel:+33641086631" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  +33 6 41 08 66 31
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -86,8 +86,14 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center">
-          <p className="text-slate-400">
-            &copy; {new Date().getFullYear()} EurekaDev - Développeur Web Freelance Haute-Saône. Tous droits réservés.
+          <div className="flex flex-wrap justify-center gap-4 mb-4 text-sm text-slate-400">
+            <a href="/mentions-legales" className="hover:text-blue-400 transition-colors">Mentions Légales</a>
+            <a href="/politique-confidentialite" className="hover:text-blue-400 transition-colors">Politique de Confidentialité</a>
+            <a href="/cgu" className="hover:text-blue-400 transition-colors">CGU</a>
+            <a href="/cgv" className="hover:text-blue-400 transition-colors">CGV</a>
+          </div>
+          <p className="text-slate-500 text-sm">
+            © {new Date().getFullYear()} EurekaDev. Tous droits réservés.
           </p>
         </div>
       </div>
